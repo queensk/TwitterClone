@@ -1,0 +1,9 @@
+<div>
+    <h3>@comments.Name</h3>
+    <p>Email: @comments.Email</p>
+    <p>@comments.Body</p>
+</div>
+@code{
+    [Parameter]
+    public Comments comments {get; set;}
+}

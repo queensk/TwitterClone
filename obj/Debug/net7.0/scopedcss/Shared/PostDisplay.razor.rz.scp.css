@@ -1,0 +1,32 @@
+.post[b-0y30523ujt] {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+}
+
+.post-image img[b-0y30523ujt] {
+    max-width: 20rem; 
+    border-radius: 1rem;
+}
+
+.post-data[b-0y30523ujt]{
+    margin: 0 1rem;
+}
+
+.post h3[b-0y30523ujt] {
+    font-size: 18px;
+    margin: 0;
+}
+
+.post p[b-0y30523ujt] {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.post-meta[b-0y30523ujt] {
+    font-size: 14px;
+    color: gray;
+}

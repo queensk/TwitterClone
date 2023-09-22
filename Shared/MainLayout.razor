@@ -1,0 +1,95 @@
+﻿@inherits LayoutComponentBase
+@inject IUserService UserService
+
+<div class="page">
+    <main>
+        <div class="top-nav">
+            <div>
+                <h1>Twitter Clone</h1>
+            </div>
+
+            <div>
+                <div class="search-bar">
+                    <input type="search" class="twitter-search-input" placeholder="Search Twitter" @bind="searchQuery">
+                    <button class="search-button" @onclick="SearchUsers">Search</button>
+                </div>
+                <div class="search-results">
+                    @if (searchResults != null)
+                    {
+                        <ul>
+                            @foreach (var user in searchResults)
+                            {
+                                <li @onclick="() => LogUserData(user)">
+                                    <h3>User ID: @user.Id</h3>
+                                    <p>Name: @user.Name</p>
+                                    <p>Username: @user.Username</p>
+                                    <p>Email: @user.Email</p>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </div>
+            </div>
+        </div>
+        <article>
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private List<User> users;
+    private List<User> searchResults;
+    private string searchQuery;
+    private User selectedUser;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UserService.OnUserSelected += HandleUserSelected;
+        users = await UserService.GetUsersAsync();
+
+        // Set the selected user to the first user if it's null
+        if (selectedUser == null && users != null && users.Count > 0)
+        {
+            selectedUser = users[0];
+            UserService.SetSelectedUser(selectedUser); // Notify other components about the selected user
+        }
+    }
+
+    private void HandleUserSelected(User user)
+    {
+        selectedUser = user;
+    }
+
+    private void SearchUsers()
+    {
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            searchResults = users.Where(user => user.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
+            if (searchResults != null)
+            {
+                foreach (var user in searchResults)
+                {
+                    Console.WriteLine($"User ID: {user.Id}");
+                    Console.WriteLine($"Name: {user.Name}");
+                    Console.WriteLine($"Username: {user.Username}");
+                    Console.WriteLine($"Email: {user.Email}");
+                }
+            }
+            @* Console.WriteLine(searchResults); *@
+        }
+        else
+        {
+            searchResults = null;
+        }
+    }
+
+    private void LogUserData(User user)
+    {
+        Console.WriteLine($"Clicked User ID: {user.Id}");
+        Console.WriteLine($"Name: {user.Name}");
+        Console.WriteLine($"Username: {user.Username}");
+        Console.WriteLine($"Email: {user.Email}");
+        // Add more user data properties as needed
+    }
+}

@@ -1,0 +1,40 @@
+ .profile-container {
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -80px; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; 
+}
+
+.user-details {
+    margin-left: 20px;
+}
+
+.user-details h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.user-details p {
+    font-size: 16px;
+    color: gray;
+}

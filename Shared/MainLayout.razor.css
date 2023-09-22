@@ -1,0 +1,154 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #1da1f2;
+    padding: 1rem 0;
+}
+.search-bar{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.twitter-search-input {
+    width: 20rem;
+    padding: .7rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: none;
+}
+
+.search-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .2rem 1.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: .8rem;
+}
+
+.search-button:hover {
+    background-color: #1991db;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.search-results {
+    margin-top: 20px;
+    position: absolute;
+    background-color: #1991db;
+    width: 23%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
+
+.top-row {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row ::deep a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}

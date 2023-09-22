@@ -1,0 +1,23 @@
+<div class="post">
+    <div class="post-image">
+        <img src="https://cdn.pixabay.com/photo/2023/09/05/16/40/sunrise-8235464_1280.jpg" alt="Profile Image">
+    </div>
+    <div class="post-data">
+        <div>
+            <h3>@posts.title</h3>
+            <p>@posts.body</p>
+            <div class="post-meta">
+                <p>User ID: @posts.userId</p>
+                <p>Post ID: @posts.id</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+@code {
+    [Parameter]
+    public Posts posts {get; set;}
+    
+
+}

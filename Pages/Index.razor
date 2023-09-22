@@ -1,0 +1,48 @@
+﻿@page "/"
+@inject IUserService UserService
+@inject IPostService PostService
+@inject ICommentService ComponentsService
+
+<Profile user="selectedUser" />
+<div>
+    <div>
+    @foreach (Posts postData in posts )
+    {
+        <PostDisplay posts = "postData"  />
+    }
+
+    </div>
+    <div>
+        @foreach(Comments comment in comments)
+        {
+            <CommentDisplay />
+        }
+    </div>
+
+</div>
+
+
+@code{
+    private List<User> users;
+    public List<Posts> posts;
+    public List<Comments> comments;
+    private User selectedUser;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserService.GetUsersAsync();
+        posts = await PostService.GetAllPosts();
+        comments = await ComponentsService.GetAllPostComments()
+        selectedUser = users.FirstOrDefault();
+         if (users != null)
+        {
+            foreach (var user in users)
+            {
+                Console.WriteLine($"User ID: {user.Id}");
+                Console.WriteLine($"Name: {user.Name}");
+                Console.WriteLine($"Username: {user.Username}");
+                Console.WriteLine($"Email: {user.Email}");
+            }
+        }
+    }
+}

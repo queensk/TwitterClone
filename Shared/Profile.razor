@@ -1,0 +1,21 @@
+<div class="profile-container">
+    <div class="banner">
+        <img src="https://cdn.pixabay.com/photo/2023/09/05/16/40/sunrise-8235464_1280.jpg" alt="Banner Image">
+    </div>
+
+    <div class="profile-info">
+        <div class="profile-image">
+            <img src="https://cdn.pixabay.com/photo/2023/09/05/16/40/sunrise-8235464_1280.jpg" alt="Profile Image">
+        </div>
+    </div>
+    <div class="user-details">
+        <h1>@user.Username</h1>
+        <p>@user.Website</p>
+        <p>@user.Email</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public User user {get; set;}
+}
