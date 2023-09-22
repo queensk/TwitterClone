@@ -1,3 +1,31 @@
+/* /Pages/Index.razor.rz.scp.css */
+.comments-posts[b-8x757ahb7b]{
+    display: flex;
+}
+/* /Shared/CommentDisplay.razor.rz.scp.css */
+.comment[b-p5qs9dguo9] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment h3[b-p5qs9dguo9] {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.comment .email[b-p5qs9dguo9] {
+    font-style: italic;
+    color: #555;
+}
+
+.comment p[b-p5qs9dguo9] {
+    margin-top: 5px;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-pd7t0wulgv] {
     position: relative;

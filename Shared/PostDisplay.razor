@@ -9,15 +9,21 @@
             <div class="post-meta">
                 <p>User ID: @posts.userId</p>
                 <p>Post ID: @posts.id</p>
+                <button @onclick="ShowComments">Show Comments</button>
             </div>
         </div>
-
     </div>
-
 </div>
+
 @code {
     [Parameter]
-    public Posts posts {get; set;}
+    public Posts posts { get; set; }
     
+    [Parameter]
+    public EventCallback<Posts> OnShowComments { get; set; }
 
+    private async Task ShowComments()
+    {
+        await OnShowComments.InvokeAsync(posts);
+    }
 }

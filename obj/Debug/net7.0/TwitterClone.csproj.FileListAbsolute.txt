@@ -828,3 +828,5 @@ C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\TwitterClone.pdb
 C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\ref\TwitterClone.dll
 C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\scopedcss\Shared\Profile.razor.rz.scp.css
 C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\scopedcss\Shared\PostDisplay.razor.rz.scp.css
+C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
+C:\Users\Gaming 15\TwitterClone\obj\Debug\net7.0\scopedcss\Shared\CommentDisplay.razor.rz.scp.css

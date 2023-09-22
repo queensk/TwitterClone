@@ -9,7 +9,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 917014258,
+        "HashCode": 356700062,
         "Kind": "Components.Component",
         "Name": "TwitterClone.Shared.PostDisplay",
         "AssemblyName": "TwitterClone",
@@ -30,6 +30,17 @@
               "Common.PropertyName": "posts",
               "Common.GloballyQualifiedTypeName": "global::TwitterClone.Models.Posts"
             }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnShowComments",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TwitterClone.Models.Posts>",
+            "DisplayName": "Microsoft.AspNetCore.Components.EventCallback<TwitterClone.Models.Posts> TwitterClone.Shared.PostDisplay.OnShowComments",
+            "Metadata": {
+              "Common.PropertyName": "OnShowComments",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::TwitterClone.Models.Posts>",
+              "Components.EventCallback": "True"
+            }
           }
         ],
         "Metadata": {
@@ -40,7 +51,7 @@
         }
       },
       {
-        "HashCode": 1725206216,
+        "HashCode": -1599406392,
         "Kind": "Components.Component",
         "Name": "TwitterClone.Shared.PostDisplay",
         "AssemblyName": "TwitterClone",
@@ -60,6 +71,17 @@
             "Metadata": {
               "Common.PropertyName": "posts",
               "Common.GloballyQualifiedTypeName": "global::TwitterClone.Models.Posts"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnShowComments",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TwitterClone.Models.Posts>",
+            "DisplayName": "Microsoft.AspNetCore.Components.EventCallback<TwitterClone.Models.Posts> TwitterClone.Shared.PostDisplay.OnShowComments",
+            "Metadata": {
+              "Common.PropertyName": "OnShowComments",
+              "Common.GloballyQualifiedTypeName": "global::Microsoft.AspNetCore.Components.EventCallback<global::TwitterClone.Models.Posts>",
+              "Components.EventCallback": "True"
             }
           }
         ],

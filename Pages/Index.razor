@@ -4,18 +4,19 @@
 @inject ICommentService ComponentsService
 
 <Profile user="selectedUser" />
-<div>
+<div class="comments-posts">
     <div>
     @foreach (Posts postData in posts )
     {
-        <PostDisplay posts = "postData"  />
+        <PostDisplay posts="postData" OnShowComments="ShowCommentsForPost" />
     }
 
     </div>
     <div>
-        @foreach(Comments comment in comments)
+        <h1>Post @(selectedPost?.id > 0 ? selectedPost.id : 1 ) comments </h1>
+        @foreach(Comments comment in selectedPostComments)
         {
-            <CommentDisplay />
+            <CommentDisplay comments="comment" />
         }
     </div>
 
@@ -27,12 +28,15 @@
     public List<Posts> posts;
     public List<Comments> comments;
     private User selectedUser;
+    private Posts selectedPost;
+    private List<Comments> selectedPostComments;
 
     protected override async Task OnInitializedAsync()
     {
         users = await UserService.GetUsersAsync();
         posts = await PostService.GetAllPosts();
-        comments = await ComponentsService.GetAllPostComments()
+        selectedPost= posts.FirstOrDefault();
+        selectedPostComments = await ComponentsService.GetAllPostComments(1);
         selectedUser = users.FirstOrDefault();
          if (users != null)
         {
@@ -44,5 +48,11 @@
                 Console.WriteLine($"Email: {user.Email}");
             }
         }
+    }
+     private async Task ShowCommentsForPost(Posts post)
+    {
+        selectedPost = post;
+        selectedPostComments = await ComponentsService.GetAllPostComments(post.id);
+        StateHasChanged();
     }
 }

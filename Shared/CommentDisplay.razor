@@ -1,9 +1,10 @@
-<div>
+<div class="comment">
     <h3>@comments.Name</h3>
-    <p>Email: @comments.Email</p>
+    <p class="email">Email: @comments.Email</p>
     <p>@comments.Body</p>
 </div>
+
 @code{
     [Parameter]
-    public Comments comments {get; set;}
+    public Comments comments { get; set; }
 }
