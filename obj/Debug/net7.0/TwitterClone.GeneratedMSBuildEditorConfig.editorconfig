@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TwitterClone
 build_property.RootNamespace = TwitterClone
-build_property.ProjectDir = C:\Users\Gaming 15\TwitterClone\
+build_property.ProjectDir = c:\Users\Gaming 15\TwitterClone\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gaming 15\TwitterClone
+build_property.MSBuildProjectDirectory = c:\Users\Gaming 15\TwitterClone
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gaming 15/TwitterClone/App.razor]
+[c:/Users/Gaming 15/TwitterClone/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gaming 15/TwitterClone/_Imports.razor]
+[c:/Users/Gaming 15/TwitterClone/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gaming 15/TwitterClone/Pages/Index.razor]
+[c:/Users/Gaming 15/TwitterClone/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-8x757ahb7b
 
-[C:/Users/Gaming 15/TwitterClone/Shared/CommentDisplay.razor]
+[c:/Users/Gaming 15/TwitterClone/Shared/CommentDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbW1lbnREaXNwbGF5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-p5qs9dguo9
 
-[C:/Users/Gaming 15/TwitterClone/Shared/MainLayout.razor]
+[c:/Users/Gaming 15/TwitterClone/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pd7t0wulgv
 
-[C:/Users/Gaming 15/TwitterClone/Shared/NavMenu.razor]
+[c:/Users/Gaming 15/TwitterClone/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zm6pys5w25
 
-[C:/Users/Gaming 15/TwitterClone/Shared/PostDisplay.razor]
+[c:/Users/Gaming 15/TwitterClone/Shared/PostDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvc3REaXNwbGF5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-0y30523ujt
 
-[C:/Users/Gaming 15/TwitterClone/Shared/Profile.razor]
+[c:/Users/Gaming 15/TwitterClone/Shared/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2ZpbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ng16gz9bg8

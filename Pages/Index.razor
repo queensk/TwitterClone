@@ -8,7 +8,7 @@
     <div>
     @foreach (Posts postData in posts )
     {
-        <PostDisplay posts="postData" OnShowComments="ShowCommentsForPost" />
+        <PostDisplay posts="postData" OnShowComments="ShowCommentsForPost" user="selectedUser" />
     }
 
     </div>

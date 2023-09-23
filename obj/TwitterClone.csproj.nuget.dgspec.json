@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj": {}
+    "c:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj": {
+    "c:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj",
+        "projectUniqueName": "c:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj",
         "projectName": "TwitterClone",
-        "projectPath": "C:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj",
+        "projectPath": "c:\\Users\\Gaming 15\\TwitterClone\\TwitterClone.csproj",
         "packagesPath": "C:\\Users\\Gaming 15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gaming 15\\TwitterClone\\obj\\",
+        "outputPath": "c:\\Users\\Gaming 15\\TwitterClone\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gaming 15\\AppData\\Roaming\\NuGet\\NuGet.Config",
